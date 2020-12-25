@@ -5,12 +5,12 @@ var stop = "./images/stop.png";
 var tag = false;
 btn.onclick = function(){
     if(tag){
-        // alert('关闭');
+        // alert('stop');
         audio.pause();
         tag = false;
         btn.setAttribute('src',play)
     }else{
-        // alert('播放');
+        // alert('play');
         audio.play();
         tag = true;
         btn.setAttribute('src',stop)
