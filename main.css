@@ -1,0 +1,155 @@
+@charset "UTF-8";
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.audio {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
+.audio-right {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  70%, 73% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  77%, 83%, 90%, 97% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  80%, 87%, 93% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+#btn {
+  animation: scale 3s both infinite;
+  -moz-animation: scale 53s both infinite;
+  /* Firefox */
+  -webkit-animation: scale 3s both infinite;
+  /* Safari 和 Chrome */
+  -o-animation: scale 3s both infinite;
+}
+
+header nav {
+  margin: 0;
+  padding: 0;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background: #06052d;
+}
+header nav ul li {
+  text-align: center;
+}
+header nav ul li:nth-of-type(2) {
+  width: 50%;
+}
+header nav ul li:nth-of-type(2) a {
+  width: calc(100% - 320px);
+  background: url("../images/logo.png") no-repeat;
+  height: 158px;
+  margin: 0 auto;
+  text-align: center;
+  text-indent: -99999px;
+  display: block;
+}
+header nav ul li:nth-of-type(2) a:hover {
+  background: url("../images/logo.png") no-repeat;
+}
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
+  line-height: 158px;
+  font-weight: bolder;
+  transition: all 3s;
+}
+header nav ul li a:hover {
+  color: brown;
+  background: #000;
+}
+header nav ul li a span {
+  background: #140c49;
+  color: white;
+  padding: 10px 20px;
+}
+
+section {
+  background: #585757;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section .main {
+  width: 1100px;
+  margin: 0 auto;
+}
+section .main .banner img {
+  width: 100%;
+}
+section .main .introduce {
+  background: #101010;
+  padding: 20px;
+}
+section .main .introduce p {
+  color: #fff;
+}
+
+.persons {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+.persons .person {
+  background: #101010;
+}
+.persons .person .person-img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.persons .person h6 {
+  text-align: center;
+}
+.persons .person h6 span {
+  position: relative;
+  color: white;
+  font-size: 20px;
+}
+.persons .person h6 span:after {
+  content: "";
+  position: absolute;
+  left: -13px;
+  bottom: -27px;
+  width: 50px;
+  box-shadow: 2px 13px 40px 12px #020202;
+  background: transparent;
+}
+.persons .person-intro {
+  display: flex;
+  align-items: baseline;
+  margin-left: 20px;
+  padding: 55px 20px 0 20px;
+  background: #101010;
+  color: white;
+}
